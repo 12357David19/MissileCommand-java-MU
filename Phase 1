@@ -1,1 +1,70 @@
 
+public class LectureMar23 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PhoneNumber sp=new PhoneNumber(763,843,8986);
+		PhoneNumber sd=new PhoneNumber(763,853,8986);
+		System.out.println(sp.equals(sd));
+
+	}
+	public static class particle{
+		private String Name;
+		private double Mass;
+		private double Charge;
+		private double Spin;
+		
+		public particle(String N,double m,double c,double s){
+			Name=N;
+			Mass=m;
+			Charge=c;
+			Spin=s;
+		}
+		public String toString(){
+			String Ma=String.valueOf(Mass);
+			String Cha=String.valueOf(Charge);
+			String Sp=String.valueOf(Spin);
+			return Name + "\nMass:"+ Ma + "\nCharge:" + Cha + "\nSpin:"+ Sp;
+			
+			
+		}}
+		public static class PhoneNumber{
+			public String A;
+			public String B;
+			public String C;
+			public int AA;
+			public int BB;
+			public int CC;
+			public boolean equal=true;
+			public PhoneNumber(int AAA,int BBB,int CCC){
+				A=String.valueOf(AAA);
+				B=String.valueOf(BBB);
+				C=String.valueOf(CCC);
+				AA=AAA;
+				BB=BBB;
+				CC=CCC;
+			}
+			public String toString(){
+				
+				return "("+A +")"+ B +"-"+ C;
+			}
+			public boolean equals(PhoneNumber r){
+				if (r.AA==AA&&r.BB==BB&&r.CC==CC){
+					equal=true;
+				}
+				else{
+					equal=false;
+				}
+				return equal;
+					
+			}
+		
+		
+		
+		
+		
+		
+	}
+
+}
+
